@@ -57,7 +57,7 @@
 					const videoTime = video.currentTime
 					const timeDiff = Math.abs(referenceTime - videoTime)
 
-					// If the difference starts is grathr than 1/5 second, resync
+					// If the difference is grather than 0.2 second, resync
 					if (timeDiff >= 0.2) {
 						video.currentTime = referenceTime
 					}
